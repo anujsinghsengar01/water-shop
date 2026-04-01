@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: linear-gradient(135deg, #a8d8ea, #ffffff);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #005f73;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.hero {
+    background-image: url('path_to_water_image.jpg');
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.shopping-cart {
+    background-color: #e9d8a6;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .product-card {
+        margin: 10px;
+    }
+}
